@@ -1,5 +1,4 @@
 Platform.mods.kubejs.name = "Dark Mana";
-
 const $KeyMappingRegistry = Java.loadClass(
     "dev.architectury.registry.client.keymappings.KeyMappingRegistry"
 );
