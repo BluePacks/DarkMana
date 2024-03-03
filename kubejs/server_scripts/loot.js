@@ -3,7 +3,11 @@ LootJS.modifiers((event) => {
     flowers.forEach((flower) => {
         event
             .addBlockLootModifier(flower)
-            .matchMainHand(Item.of("kubejs:golden_sickle").weakNBT())
+            .matchMainHand(
+                Item.of("kubejs:golden_sickle").withNBT({
+                    Enchantments: [{ lvl: 1, id: "kubejs:floral_collection" }],
+                })
+            )
             .addLoot(Item.of(flower).withChance(0.5));
     });
 
@@ -20,4 +24,9 @@ LootJS.modifiers((event) => {
                 Item.of("twigs:pebble").withChance(50),
             ]
         );
+    event
+        .addBlockLootModifier("minecraft:stone")
+        .removeLoot("minecraft:cobblestone")
+        .matchMainHand(Item.of("kubejs:flower_pickaxe"))
+        .addLoot("botania:livingrock");
 });
