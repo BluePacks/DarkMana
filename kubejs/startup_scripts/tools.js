@@ -35,6 +35,13 @@ StartupEvents.registry("item", (event) => {
             .texture("layer0", "kubejs:item/tools/sword_hilt")
             .texture("layer1", "kubejs:item/tools/sword_blade")
             .speed(speed);
+        event
+            .create(`${name}_paxel`, "paxel")
+            .tier(tier)
+            .color(1, color)
+            .texture("layer0", "kubejs:item/tools/axe_handle")
+            .texture("layer1", "kubejs:item/tools/paxel")
+            .speed(speed);
     }
     toolset("flower", "wood", 0xf542d7, 10);
 

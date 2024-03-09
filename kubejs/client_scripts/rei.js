@@ -1,8 +1,10 @@
 // Currently broken!!
 
-REIEvents.information((event) => {
+JEIEvents.information((event) => {
     event.addItem("kubejs:flower_pickaxe", [
         "Livingrock is obtainable from mining stone with any form of flower pickaxe.",
     ]);
-    console.log("REI Event ran successfully!");
+    event.addItem("botania:livingrock", [
+        "Livingrock is obtainable from mining stone with any form of flower pickaxe.",
+    ]);
 });

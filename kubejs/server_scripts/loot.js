@@ -14,7 +14,7 @@ LootJS.modifiers((event) => {
     event
         .addBlockLootModifier("minecraft:stone")
         .removeLoot("minecraft:cobblestone")
-        .matchMainHand(Item.of("minecraft:wooden_pickaxe"))
+        .matchMainHand(["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe"])
         .addWeightedLoot(
             [1, 4],
             [
@@ -28,5 +28,10 @@ LootJS.modifiers((event) => {
         .addBlockLootModifier("minecraft:stone")
         .removeLoot("minecraft:cobblestone")
         .matchMainHand(Item.of("kubejs:flower_pickaxe"))
+        .addLoot("botania:livingrock");
+    event
+        .addBlockLootModifier("minecraft:stone")
+        .removeLoot("minecraft:cobblestone")
+        .matchMainHand(Item.of("kubejs:flower_paxel"))
         .addLoot("botania:livingrock");
 });

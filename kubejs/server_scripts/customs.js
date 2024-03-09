@@ -63,4 +63,28 @@ ServerEvents.recipes((event) => {
             },
         ],
     });
+    event.custom({
+        type: "lychee:item_inside",
+        item_in: [
+            {
+                tag: "botania:mystical_flowers",
+            },
+            {
+                tag: "botania:mystical_flowers",
+            },
+            {
+                tag: "botania:mystical_flowers",
+            },
+        ],
+
+        block_in: {
+            blocks: ["water"],
+        },
+        post: [
+            {
+                type: "place",
+                block: "kubejs:floral_essence",
+            },
+        ],
+    });
 });
