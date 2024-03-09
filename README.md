@@ -4,9 +4,9 @@ Welcome to the Dark Mana Modpack! This modpack is designed to immerse you in a w
 
 ## TODO
 
+-   [ ] Create textures for Mistletoe bush, Mistletoe Sprig, Mistletoe Berry, and Deadrock
 -   [ ] Progression, Botania, Occultism, Ars
 -   [ ] Final Goal
-
 ## Credits
 
 -   FooterMan16 for custom tool textures!
